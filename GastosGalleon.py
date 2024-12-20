@@ -1,13 +1,13 @@
-# The first three lines of the code creates empty lists that will be used to store information about the user’s input (expenses).
+# Creates empty lists to store information about the user’s input.
 expenses = []
 expenseList = []
 expenseDescriptions = []
 
-# The lines greets the user, asks for their name, and saves it in the variable for later use.
+# Greets the user, asks for their name, and saves it in the variable for later use.
 print("Hello! Welcome to Gastos Galleon.")
 name = input("Enter your name: ")
 
-# Lets users input their expense amount and description, validates the data, stores it in lists, and prompts for corrections if the input is invalid.
+# Input expense amount and description, validates input, stores it in lists, and asks  for corrections if the input is invalid.
 def addExpense():
     try:
         # Take the expense amount and description
@@ -26,7 +26,7 @@ def addExpense():
         # Deals with invalid input for expense amount
         print("Invalid input. Please enter a valid amount.")
         
-# This checks for recorded expenses, displays each one with its description and amount, and shows the total sum.
+# Checks for recorded expenses, displays each one with its description and amount, and shows the total sum.
 def showExpenses():
     if not expenses: # Check if there are no recorded expenses
         print("No expenses recorded.")
